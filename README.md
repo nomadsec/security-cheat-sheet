@@ -181,3 +181,44 @@ xterm -display attackerip:1
 or
 $ DISPLAY=attackerip:0 xterm
 ```
+
+<h3>GDB Commands
+
+<p>https://jivoi.github.io/2015/07/01/pentest-tips-and-tricks/
+  
+```
+# Setting Breakpoint
+break *_start
+
+# Execute Next Instruction
+next
+step
+n
+s
+
+# Continue Execution
+continue
+c
+
+# Data
+checking 'REGISTERS' and 'MEMORY'
+
+# Display Register Values: (Decimal,Binary,Hex)
+print /d –> Decimal
+print /t –> Binary
+print /x –> Hex
+O/P :
+(gdb) print /d $eax
+$17 = 13
+(gdb) print /t $eax
+$18 = 1101
+(gdb) print /x $eax
+$19 = 0xd
+(gdb)
+
+# Display values of specific memory locations
+command : x/nyz (Examine)
+n –> Number of fields to display ==>
+y –> Format for output ==> c (character) , d (decimal) , x (Hexadecimal)
+z –> Size of field to be displayed ==> b (byte) , h (halfword), w (word 32 Bit)
+```
