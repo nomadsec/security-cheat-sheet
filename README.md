@@ -1,5 +1,5 @@
 # security-cheat-sheet
-<h4>Not exhaustive list of commands per tool, just a few that might make a difference. These are from all over. Credit where credit's due. Just a convenient compilation.
+<h4>quick searchable collection of commands for personal use
 
 <h3>SSH Pivoting
 
